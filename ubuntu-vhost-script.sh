@@ -3,6 +3,8 @@
 sudo mkdir -p /var/www/$1/
 
 #create an index.html file
+#skip this part if you are using composer to install Codeigniter
+#composer requires epmty directory
 sudo cat > /var/www/$1/index.html << EOF
 <h1>Hi</h1>
 EOF
