@@ -15,6 +15,7 @@ sudo cat> /etc/apache2/sites-available/$1.conf << EOF
 ServerAdmin admin@$1
 ServerName $1
 ServerAlias www.$1
+# set document root as /var/www/$1/public as recommeneded by CI if needed
 DocumentRoot /var/www/$1
 ErrorLog ${APACHE_LOG_DIR}/error.log
 CustomLog ${APACHE_LOG_DIR}/access.log combined
